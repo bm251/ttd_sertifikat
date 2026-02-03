@@ -29,7 +29,7 @@ st.sidebar.header("🔧 Pengaturan Posisi")
 
 sign_x = st.sidebar.slider("Posisi X", 0, 2000, 750)
 sign_y = st.sidebar.slider("Posisi Y", 0, 4000, 1000)
-scale = st.sidebar.slider("Skala TTD (%)", 10, 200, 100)
+scale = st.sidebar.slider("Skala TTD (%)", 10, 250, 100)
 
 # =========================
 # PREVIEW
@@ -76,4 +76,5 @@ if cert_files and sign_file:
             file_name="sertifikat_output.zip",
             mime="application/zip"
         )
+
 
