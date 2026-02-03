@@ -50,7 +50,7 @@ if cert_files and sign_file:
     preview = cert_img.copy()
     preview.paste(signature, (sign_x, sign_y), signature)
 
-    st.image(preview, caption="Preview Sertifikat", use_container_width=True)
+    st.image(preview, caption="Preview Sertifikat", width=stretch)
 
     # =========================
     # GENERATE OUTPUT
@@ -76,5 +76,6 @@ if cert_files and sign_file:
             file_name="sertifikat_output.zip",
             mime="application/zip"
         )
+
 
 
